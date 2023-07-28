@@ -3,7 +3,7 @@
 in this tutorial we'll use Crosstool-NG, a versatile (cross) toolchain generator. It supports many architectures and components and has a simple yet powerful menuconfig-style interface to help users to set-up a custom toolchain.
 
 ## Initial setup 
-We'll use crosstool-ng to create a cross-compiler toolchain. Let's download it from git:
+To begin, we need to download Crosstool-NG from Git. Open a terminal and run the following commands:
 ```
 sudo apt-get update
 sudo apt-get install build-essential git bison flex gawk texinfo libtool automake
@@ -18,10 +18,10 @@ Install crosstool-ng following these steps:
 make
 sudo make install
  ```
- >**Note**: During the installation it could happens you need to install some additional libraries i didn't mentioned above, therefore be careful on the log shown in the terminal.
+ >**Note**: During the installation, you may need to install some additional libraries not mentioned above. Please be attentive to the log shown in the terminal for any error messages.
  
 ## Configuration
-Crosstool-ng has a terminal GUI that helps users to easily set-up cross-compiler toolchains. Let's open the menu:
+Crosstool-NG provides a terminal GUI to help users set up cross-compiler toolchains effortlessly. Let's open the menu:
 ```
 cd crosstool-ng
 ct-ng menuconfig
@@ -66,7 +66,8 @@ The command below will generate the compiled file. Now,install and test the C pr
 sudo apt-get install qemu-user
 qemu-arm ~/Desktop/main.o
 ```
-If everything was gone successfuly you'll see "Hello World!" shown in the terminal.
+If everything went smoothly, you'll see "Hello World!" displayed in the terminal.
+That's it! You have successfully created a cross-compiler toolchain for ARM devices and tested it using QEMU.
 
 
 
